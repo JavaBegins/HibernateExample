@@ -3,20 +3,26 @@ package com.lti.HibernateExample.HibernateExp;
 public class Employee 
 {
 private int id;
-private String empname;
+private String empName;
 private String branch;
 public Employee(){}
+public Employee(int id, String empName, String branch) {
+	super();
+	this.id = id;
+	this.empName = empName;
+	this.branch = branch;
+}
 public int getId() {
 	return id;
 }
 public void setId(int id) {
 	this.id = id;
 }
-public String getEmpname() {
-	return empname;
+public String getEmpName() {
+	return empName;
 }
-public void setEmpname(String empname) {
-	this.empname = empname;
+public void setEmpName(String empName) {
+	this.empName = empName;
 }
 public String getBranch() {
 	return branch;
@@ -24,16 +30,9 @@ public String getBranch() {
 public void setBranch(String branch) {
 	this.branch = branch;
 }
-public Employee(int id, String empname, String branch) {
-	super();
-	this.id = id;
-	this.empname = empname;
-	this.branch = branch;
-}
 @Override
 public String toString() {
-	return "Employee [id=" + id + ", empname=" + empname + ", branch=" + branch + "]";
+	return "Employee [id=" + id + ", empName=" + empName + ", branch=" + branch + "]";
 }
-
 
 }
