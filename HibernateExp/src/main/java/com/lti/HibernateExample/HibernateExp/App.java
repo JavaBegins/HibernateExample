@@ -18,7 +18,8 @@ public class App
     e.setBranch("chennai");
     s.beginTransaction();
     s.save(e);
+    s.update(e);
     s.getTransaction().commit();
-       
+       s.close();
     }
 }
