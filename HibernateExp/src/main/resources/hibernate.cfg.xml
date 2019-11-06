@@ -10,7 +10,7 @@
          <property name="hibernate.hbm2ddl.auto">create</property>
          <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
        <property name="hibernate.connection.pool_size">1</property>
-       <mapping resource="com/lti/HibernateExample/HibernateExp/employee.hbm.xml"></mapping>
+       <mapping resource="employee.hbm.xml"></mapping>
     </session-factory>
     
 </hibernate-configuration>
