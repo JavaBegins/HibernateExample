@@ -9,6 +9,7 @@
         <property name="connection.password">tiger</property>
          <property name="hbm2ddl.auto">create/update</property>
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+       
        <property name="connection.pool_size">1</property>
     </session-factory>
 </hibernate-configuration>
