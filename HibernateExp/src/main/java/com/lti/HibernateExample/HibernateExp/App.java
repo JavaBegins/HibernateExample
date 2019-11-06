@@ -9,8 +9,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        Configuration c=new Configuration().configure();
-        StandardServiceRegistryBuilder b= new StandardServiceRegistryBuilder().applySettings(c.getProperties());
+    Configuration c=new Configuration().configure();
+    StandardServiceRegistryBuilder b= new StandardServiceRegistryBuilder().applySettings(c.getProperties());
     SessionFactory f=c.buildSessionFactory(b.build());
     Session s=f.openSession();
     Employee e=new Employee();
