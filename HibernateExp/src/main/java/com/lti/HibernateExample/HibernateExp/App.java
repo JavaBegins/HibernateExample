@@ -14,11 +14,8 @@ public class App
     SessionFactory f=c.buildSessionFactory(b.build());
     Session s=f.openSession();
     Employee e=new Employee();
-    int id = 121;
-	Employee emp=(Employee)s.get(Employee.class, id); 
-    		emp.setEmpName("shivam");
-    emp.setBranch("student");
-    s.update(e);
+    		e.setEmpName("shivam");
+    e.setBranch("student");
     s.beginTransaction();
     s.getTransaction().commit();
     }

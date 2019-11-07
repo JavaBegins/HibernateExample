@@ -11,6 +11,7 @@
 </id>
 <property name="empName" column="empname"/>
 <property name="branch" column="branch"/>
+
 </class>
 
 </hibernate-mapping>
