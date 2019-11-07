@@ -14,13 +14,12 @@ public class App
     SessionFactory f=c.buildSessionFactory(b.build());
     Session s=f.openSession();
     Employee e=new Employee();
-   
-    e.setId(121);
-    e.setEmpName("shivam");
-    e.setBranch("student");
-    s.beginTransaction();
-    s.save(e);
+    int id = 121;
+	Employee emp=(Employee)s.get(Employee.class, id); 
+    		emp.setEmpName("shivam");
+    emp.setBranch("student");
     s.update(e);
+    s.beginTransaction();
     s.getTransaction().commit();
     }
 }
